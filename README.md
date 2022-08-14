@@ -8,7 +8,7 @@ A website that offers fitness training services.
 * CSS
 
 ## Website
-https://bslockhart.github.io/run-buddy/
+https://bslockhart.github.io/Run-Buddy-Redesign/
 
 ## Contribution
 Made with ❤️ by Brian Lockhart
