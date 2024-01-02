@@ -1,8 +1,13 @@
 :root {
-  --primary-color: #fce138;
-  --secondary-color: #024e76;
-  --tertiary-color: #39a6b2;
+  --primary-color: #dee1f3;
+  /* A deep, sophisticated indigo for a primary accent */
+  --secondary-color: #433c3c;
+  /* A dark grey for a sleek and modern secondary tone */
+  --tertiary-color: #0a25ee;
+  /* A rich, dark red for a strong and bold tertiary accent */
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -101,6 +106,7 @@ footer div {
 footer a {
   color: var(--secondary-color);
 }
+
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
@@ -124,10 +130,12 @@ section {
   width: 35%;
   text-align: right;
   margin: 3.5%;
-  color: #fff;
+  color: var(--primary-color);
+  /* Changed to use primary color for text */
   font-size: 18px;
   line-height: 1.2;
 }
+
 
 .hero-cta h2 {
   font-style: italic;
@@ -138,23 +146,32 @@ section {
 
 .hero-form {
   border: 3px solid var(--secondary-color);
-  background-color: rgba(255, 225, 56, 0.8);
+  /* Dark grey border */
+  background-color: rgba(40, 53, 147, 0.8);
+  /* Semi-transparent indigo background */
   padding: 20px;
-  color: var(--secondary-color);
+  color: #fff;
+  /* White text for readability */
   width: 40%;
   margin: 3.5%;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+
 .hero-form button:hover {
-  background-color: var(--tertiary-color);  
+  background-color: var(--tertiary-color);
+  /* Changed to dark red on hover */
+  color: #fff;
+  /* Added for better visibility */
 }
+
 
 .hero-form h3 {
   font-size: 24px;
   margin: 0;
 }
+
 .hero-form p {
   margin: 5px 0 15px 0;
 }
@@ -166,50 +183,57 @@ section {
   font-size: 16px;
   color: var(--secondary-color);
   width: 100%;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
   border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .form-input:focus {
-  background-color: rgba(255,255,255, 1);
+  background-color: rgba(0, 0, 0, 1);
   outline: none;
+  color: #fff;
 }
+
 
 .hero-form label {
   margin: 0 5px;
 }
 
 .hero-form button {
-  color: var(--primary-color);
+  color: #fff;
   background-color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
-} 
+}
 
-.checkbox-wrapper input, .radio-wrapper input {
+
+.checkbox-wrapper input,
+.radio-wrapper input {
   opacity: 0;
 }
 
-.checkbox-wrapper label, .radio-wrapper label {
+.checkbox-wrapper label,
+.radio-wrapper label {
   position: relative;
   left: 10px;
   margin: 10px;
   line-height: 1.6;
 }
 
-.checkbox-wrapper label::before, .radio-wrapper label::before {
+.checkbox-wrapper label::before,
+.radio-wrapper label::before {
   content: "";
   height: 20px;
   width: 20px;
-  background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid var(--secondary-color);  
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid var(--secondary-color);
   position: absolute;
   top: -4px;
   left: -30px;
 }
+
 
 .radio-wrapper label::before {
   border-radius: 50%;
@@ -239,15 +263,16 @@ section {
   transform: rotate(-58deg);
 }
 
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
+.checkbox-wrapper input+label::after,
+.radio-wrapper input+label::after {
   content: none;
 }
 
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
+.checkbox-wrapper input:checked+label::after,
+.radio-wrapper input:checked+label::after {
   content: "";
 }
+
 /* HERO STYLES END */
 
 
@@ -255,7 +280,8 @@ section {
 .section-title {
   font-size: 48px;
   border-bottom: 3px solid;
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  /* Updated to primary color */
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -263,29 +289,35 @@ section {
 }
 
 .primary-border {
-  border-color: var(--primary-color);
+  border-color: var(--secondary-color);
+  /* Updated to secondary color */
 }
 
 .secondary-border {
   border-color: var(--tertiary-color);
+  /* Remains tertiary color */
 }
+
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
 .intro p {
   line-height: 1.7;
-  color: var(--tertiary-color);
+  color: #fff;
+  /* Updated for better readability */
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
 }
-/* WHAT YOU DO STYLES END */
 
+/* WHAT WE DO STYLES END */
 
 /* WHAT YOU DO STYLES START */
-.steps { 
+.steps {
   background: var(--primary-color);
+  color: #fff;
+  /* Added for text readability */
 }
 
 .step {
@@ -303,7 +335,8 @@ section {
 }
 
 .step h3 {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
+  /* Updated to tertiary color */
   font-size: 46px;
   flex: 1 30%;
 }
@@ -329,15 +362,18 @@ section {
 }
 
 .step-text p {
-  color: var(--tertiary-color);
+  color: #fff;
+  /* Updated for better readability */
   font-size: 18px;
 }
 
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  /* Updated to primary color */
 }
+
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -353,7 +389,8 @@ section {
   margin: 20px;
   flex: 1;
   background: var(--secondary-color);
-  color: var(--primary-color);
+  color: #fff;
+  /* Updated for better readability */
 }
 
 .trainer img {
@@ -383,10 +420,11 @@ section {
 /* REACH OUT STYLES START */
 .contact {
   background: var(--secondary-color);
+  color: #fff; /* Added for general text readability */
 }
 
 .contact h2 {
-  color: var(--primary-color);
+  color: var(--tertiary-color); /* Updated to tertiary color for contrast */
 }
 
 .contact-info {
@@ -395,7 +433,7 @@ section {
   flex-wrap: wrap;
 }
 
-.contact-info > * {
+.contact-info>* {
   flex: 1;
   margin: 15px;
 }
@@ -409,18 +447,20 @@ section {
 }
 
 .contact-info h3 {
-  color: var(--primary-color);
+  color: var(--tertiary-color); /* Updated to tertiary color for contrast */
   font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   border: 1px solid var(--secondary-color);
   display: block;
   padding: 7px 15px;
@@ -430,19 +470,21 @@ section {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
+  background-color: rgba(0, 0, 0, 0.75); /* Updated for dark theme */
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: rgba(0, 0, 0, 1); /* Updated for dark theme */
+  color: #fff; /* Updated for readability */
   outline: none;
 }
 
 .contact-form button {
   width: 100%;
   border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
+  background: var(--tertiary-color); /* Updated to tertiary color */
+  color: #fff; /* Updated for readability */
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
@@ -450,13 +492,14 @@ section {
 }
 
 .contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
+  color: #fff; /* Kept for readability */
+  background: var(--secondary-color); /* Updated for contrast */
 }
 
 .contact-info a {
-  color: var(--primary-color);
+  color: var(--tertiary-color); /* Updated for contrast */
 }
+
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -495,15 +538,17 @@ section {
     font-size: 20px;
   }
 
-  footer h2, footer div {
+  footer h2,
+  footer div {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta, .hero-form {
+  .hero-cta,
+  .hero-form {
     width: 100%;
   }
-  
+
   .hero-cta {
     text-align: center;
   }
@@ -511,12 +556,12 @@ section {
   .section-title {
     width: 80%;
   }
-  
+
   .trainer {
     flex: 0 70%;
   }
-  
-  .contact-info iframe{
+
+  .contact-info iframe {
     flex: 1 100%;
   }
 }
@@ -546,10 +591,11 @@ section {
   }
 
   .step-text {
-    flex: 100%;  
+    flex: 100%;
   }
 
-  .trainer-bio h3, .trainer-bio h4 {
+  .trainer-bio h3,
+  .trainer-bio h4 {
     display: block;
   }
 }
@@ -576,7 +622,7 @@ section {
     text-align: center;
   }
 
-  .contact-info > * {
+  .contact-info>* {
     flex: 0 100%;
   }
 

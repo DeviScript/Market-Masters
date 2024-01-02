@@ -11,20 +11,21 @@
   font-size: 42px;
   font-weight: 400;
   font-style: italic;
-  color: #fce138;
+  color: var(--primary-color); /* Updated to primary color */
   display: inline-block;
-  border-bottom: 4px solid #fce138;
+  border-bottom: 4px solid var(--primary-color); /* Updated to primary color */
 }
 
 .secondary-content {
   width: 80%;
   margin: 0 auto;
-  color: #024e76;
+  color: var(--secondary-color); /* Updated to secondary color */
 }
 
 .secondary-content h3 {
   font-size: 25px;
   margin: 20px 0;
+  color: var(--primary-color); /* Updated to primary color */
 }
 
 .secondary-content p {
@@ -38,6 +39,6 @@
 }
 
 .secondary-content li {
-  color: #39a6b2;
+  color: var(--tertiary-color); /* Updated to tertiary color */
   margin: 10px 0;
 }
