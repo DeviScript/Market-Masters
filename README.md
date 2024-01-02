@@ -1,16 +1,15 @@
-# Run Buddy, Inc
+# MARKET MASTERS
 
 ## Purpose
-A website that offers fitness training services. 
+A website that offers marketing services. 
 
 ## Built With
 * HTML
 * CSS
 
 ## Website
-https://bslockhart.github.io/Run-Buddy-Redesign/
 
 ## Contribution
-Made with ❤️ by Brian Lockhart
+Brian Lockhart
 
-### ©️2022 Run Buddy, Inc 
+### ©️2024 MARKET MASTERS
